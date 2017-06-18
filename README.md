@@ -19,16 +19,19 @@ This is a project made for `Udacity Front-end Nanodegree Program` about optimizi
 
 ## index.html
 - First I **compressed** all resources this file requests.
-- minified all `css` and `js` files.
-- inlined `css` so that I can overcome `render-blocking` issue.
-- removed the request for google fonts and used a snippet found online for **async** loading google fonts.
-- made all `scripts` load **async**.
-- replaced _Cameron_ with my name xDDD.
+- Minified all `css` and `js` files.
+- Inlined `css` so that I can overcome `render-blocking` issue.
+- Removed the request for google fonts and used a snippet found online for **async** loading google fonts.
+- Made all `scripts` load **async**.
+- Replaced _Cameron_ with my name xDDD.
 
 ## main.js
-- removed `document.body.scrollTop` from inside the loop and put it just before so that I overcome FSL problem.
-- declared `phase` variable oustide the loop so it doesn't get declared everytime saving some time.
-- changed `changePizzaSizes` alot deleting the call for `determineDx` and determining the size and calculating width percentage directly inside `changePizzaSizes`.
+- Removed `document.body.scrollTop` from inside the loop and put it just before so that I overcome FSL problem.
+- Declared `phase` variable oustide the loop so it doesn't get declared everytime saving some time.
+- Changed `changePizzaSizes` alot deleting the call for `determineDx` and determining the size and calculating width percentage directly inside `changePizzaSizes`.
+- Declared `pizzasDiv` outside the loop.
+- Replaced `querySelectorAll` with `getElementsByClassName`.
+- reduced number of `pizzas` to a number according to the user screen height.
 
 ## Ideas
 - If you have any ideas about optimizing this even more feel free to contact me anytime at [hi@basselahmed.com](mailto:hi@basselahmed.com)
