@@ -1,6 +1,8 @@
 # Website Performance Optimization portfolio project
 This is a project made for `Udacity Front-end Nanodegree Program` about optimizing website speed.
 
+**LIVE LINK:** https://basselahmed.github.io/frontend-nanodegree-mobile-portfolio/dist/
+
 ## Table of contents
 - Installation
 - `index.html` optimizations.
