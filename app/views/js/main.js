@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var elem;
   // get the user screen height and calculate rows then get pizzas number
   var h = window.screen.height;
-  var rows = Math.round(h / 150);
+  var rows = Math.round(h / s);
   var pizzasNumber = (rows * cols);
   console.log("pizzasNumber: " + pizzasNumber);
   // declared the selector outside of the loop and used getElementById instead of querySelector
