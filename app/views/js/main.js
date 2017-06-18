@@ -577,14 +577,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var cols = 8;
   var s = 256;
   var elem;
-  // get the user screen height
+  // get the user screen height and calculate rows then get pizzas number
   var h = window.screen.height;
   var rows = Math.round(h / 150);
   var pizzasNumber = (rows * cols);
   console.log("pizzasNumber: " + pizzasNumber);
   // declared the selector outside of the loop and used getElementById instead of querySelector
   var movingPizzas1 = document.getElementById("movingPizzas1");
-  // reduced number of pizzas to 24
   for (var i = 0; i < pizzasNumber; i++) {
     elem = document.createElement('img');
     elem.className = 'mover';
