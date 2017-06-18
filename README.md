@@ -29,4 +29,4 @@ This is a project made for `Udacity Front-end Nanodegree Program` about optimizi
 - changed `changePizzaSizes` alot deleting the call for `determineDx` and determining the size and calculating width percentage directly inside `changePizzaSizes`.
 
 ## Ideas
-- If you have any ideas about optimizing this even more feel free to contact me anytime @[hi@basselahmed.com](mailto:hi@basselahmed.com)
+- If you have any ideas about optimizing this even more feel free to contact me anytime at [hi@basselahmed.com](mailto:hi@basselahmed.com)
