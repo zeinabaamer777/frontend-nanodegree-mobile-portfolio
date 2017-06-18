@@ -2,9 +2,18 @@
 This is a project made for `Udacity Front-end Nanodegree Program` about optimizing website speed.
 
 ## Table of contents
+- Installation
 - `index.html` optimizations.
 - `main.js` optimizations.
 - Ideas.
+
+## Installation
+- Install npm
+- Install gulp
+- Download this repo && cd into it
+- run `npm install`
+- run `gulp`
+- open `dist/index.html` via any browser
 
 ## index.html
 - First I **compressed** all resources this file requests.

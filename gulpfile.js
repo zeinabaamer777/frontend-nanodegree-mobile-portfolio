@@ -8,10 +8,19 @@ var del = require('del');
 var runSequence = require('run-sequence');
 
 
+gulp.task('clean:dist', function() {
+  return del.sync('dist');
+})
+
 gulp.task('html', function(){
   return gulp.src('app/*.html')
     .pipe(gulp.dest('dist'))
 });
+
+gulp.task('views', function() {
+  return gulp.src('app/views/**/*')
+  .pipe(gulp.dest('dist/views'))
+})
 
 gulp.task('compressjs', function () {
   gulp.src('app/**/*.js')
@@ -32,15 +41,6 @@ gulp.task('images', function(){
   .pipe(gulp.dest('dist/img'))
 });
 
-gulp.task('views', function() {
-  return gulp.src('app/views/**/*')
-  .pipe(gulp.dest('dist/views'))
-})
-
-gulp.task('clean:dist', function() {
-  return del.sync('dist');
-})
-
 gulp.task('default', function(callback) {
-  runSequence('clean:dist', 'html', 'compressjs', 'compresscss', 'images', 'views', callback);
+  runSequence('clean:dist', 'html', 'views', 'compressjs', 'compresscss', 'images', callback);
 });

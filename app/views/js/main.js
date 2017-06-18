@@ -451,6 +451,12 @@ var resizePizzas = function(size) {
   // Iterates through pizza elements on the page and changes their widths
   var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
   var newwidth = 0;
+
+  /**
+   * 
+   * Removed the call for determineDx and optimized width selection with perecentage
+   * fixing the FSL
+   */
   function changePizzaSizes(size) {
     switch(size) {
         case "1":
@@ -515,6 +521,10 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
+  /**
+   * Removing scrollTop calculation from inside the loop and executing it beforehand so the pipeline is fixed
+   * and FPS increased
+   */
   var items = document.querySelectorAll('.mover');
   var bodyScrollTopCalc = document.body.scrollTop / 1250;
   var phase = 0;
